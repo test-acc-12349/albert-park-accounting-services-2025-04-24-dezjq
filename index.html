@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,23 +21,38 @@
     <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+                <a href="https://test-acc-12349.github.io/albert-park-accounting-services-2025-04-24-dezjq" class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                     Albert Park
-                </div>
+                </a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="hover:text-purple-400 transition-colors duration-300">Features</a>
                     <a href="#benefits" class="hover:text-purple-400 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="hover:text-purple-400 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-purple-400 transition-colors duration-300">About Us</a>
+                    <a href="#faq" class="hover:text-purple-400 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="hover:text-purple-400 transition-colors duration-300">Contact</a>
                 </div>
-                <button class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
-                    Get Started
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
+                <a href="#contact" class="hidden md:inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    Get Started
+                </a>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#features" class="block py-2 hover:text-purple-400 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block py-2 hover:text-purple-400 transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block py-2 hover:text-purple-400 transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block py-2 hover:text-purple-400 transition-colors duration-300">About Us</a>
+                <a href="#faq" class="block py-2 hover:text-purple-400 transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 hover:text-purple-400 transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920')] bg-cover bg-center opacity-10"></div>
         <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-gray-900"></div>
         <div class="container mx-auto px-6 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
@@ -37,10 +60,10 @@
                     Your financial success is our bottom line
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-300 mb-12">
-                    Expert accounting services tailored to drive your business forward
+                    Expert accounting services tailored to drive your business forward. We combine cutting-edge technology with decades of expertise to deliver unmatched financial solutions.
                 </p>
-                <a href="https://theaccountants.com" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white text-lg px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
-                    Transform Your Finances
+                <a href="#contact" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white text-lg px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    Transform Your Finances Today
                 </a>
             </div>
         </div>
@@ -59,8 +82,8 @@
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-chart-line text-2xl text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Tax Optimization</h3>
-                    <p class="text-gray-400">Strategic tax planning and optimization to maximize your savings and ensure compliance.</p>
+                    <h3 class="text-2xl font-bold mb-4">Advanced Tax Optimization</h3>
+                    <p class="text-gray-400">Strategic tax planning and optimization using AI-powered analysis to maximize your savings. Our approach has helped clients reduce tax liability by an average of 27%.</p>
                 </div>
 
                 <!-- Cloud Accounting -->
@@ -68,8 +91,8 @@
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-cloud text-2xl text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Cloud Accounting</h3>
-                    <p class="text-gray-400">Secure, accessible, and real-time financial management from anywhere in the world.</p>
+                    <h3 class="text-2xl font-bold mb-4">Intelligent Cloud Accounting</h3>
+                    <p class="text-gray-400">Enterprise-grade cloud accounting with bank-level security and 99.9% uptime. Access your financial data instantly from any device, anywhere in the world.</p>
                 </div>
 
                 <!-- Real-time Reporting -->
@@ -77,8 +100,8 @@
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-file-alt text-2xl text-white"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Real-time Reporting</h3>
-                    <p class="text-gray-400">Instant insights into your financial performance with detailed analytics and reports.</p>
+                    <h3 class="text-2xl font-bold mb-4">Dynamic Financial Reporting</h3>
+                    <p class="text-gray-400">Customizable dashboards and reports with real-time insights. Make data-driven decisions with our advanced analytics and forecasting tools.</p>
                 </div>
             </div>
         </div>
@@ -91,26 +114,141 @@
                 Why Choose Us
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center">
+                <div class="text-center hover:transform hover:scale-105 transition-all duration-300">
                     <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-clock text-3xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Save Time</h3>
-                    <p class="text-gray-400">Streamlined processes that give you back valuable hours in your day.</p>
+                    <h3 class="text-xl font-bold mb-4">Save 20+ Hours Monthly</h3>
+                    <p class="text-gray-400">Our automated systems and streamlined processes save our clients an average of 20+ hours every month on financial management.</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center hover:transform hover:scale-105 transition-all duration-300">
                     <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-check-circle text-3xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Reduce Errors</h3>
-                    <p class="text-gray-400">Advanced systems and expert oversight to ensure accuracy in all financial matters.</p>
+                    <h3 class="text-xl font-bold mb-4">99.9% Accuracy Rate</h3>
+                    <p class="text-gray-400">Our triple-verification system and AI-powered checks ensure near-perfect accuracy in all financial reporting and tax submissions.</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center hover:transform hover:scale-105 transition-all duration-300">
                     <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-dollar-sign text-3xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Maximize Deductions</h3>
-                    <p class="text-gray-400">Strategic tax planning to ensure you claim every eligible deduction.</p>
+                    <h3 class="text-xl font-bold mb-4">Maximize Tax Savings</h3>
+                    <p class="text-gray-400">Our clients average 27% more in tax deductions compared to their previous providers through our comprehensive optimization strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+                About Us
+            </h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-300 mb-8 leading-relaxed">
+                    Founded in 2010, Albert Park Accounting Services emerged from a vision to revolutionize financial services through technology. Our founders, with over 30 years of combined experience in accounting and fintech, saw the need for a more innovative, client-focused approach to accounting services.
+                </p>
+                <p class="text-gray-300 leading-relaxed">
+                    Our mission is to empower businesses with cutting-edge financial solutions that drive growth and success. We're committed to our core values of innovation, integrity, and excellence, ensuring every client receives personalized attention and strategic guidance to achieve their financial goals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+                Client Success Stories
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Their cloud accounting system saved us over 30 hours monthly in bookkeeping. The real-time reporting helps us make better decisions instantly. Best investment we've made for our business."</p>
+                    <div class="text-sm text-gray-400">
+                        <p class="font-bold">Sarah Chen</p>
+                        <p>CEO, TechStart Solutions</p>
+                    </div>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"The tax optimization strategies they implemented helped us save $50,000 last year alone. Their team is always available and incredibly knowledgeable."</p>
+                    <div class="text-sm text-gray-400">
+                        <p class="font-bold">Michael Roberts</p>
+                        <p>CFO, BuildRight Construction</p>
+                    </div>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Switching to Albert Park was a game-changer. Their automated systems and proactive tax planning have transformed how we manage our finances."</p>
+                    <div class="text-sm text-gray-400">
+                        <p class="font-bold">Emma Thompson</p>
+                        <p>Owner, Wellness Hub</p>
+                    </div>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"The real-time reporting and financial insights have been invaluable for our growth. We've increased our profit margins by 15% since partnering with them."</p>
+                    <div class="text-sm text-gray-400">
+                        <p class="font-bold">David Wilson</p>
+                        <p>Director, Retail Solutions Inc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+                Frequently Asked Questions
+            </h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-bold mb-4">How does your cloud accounting system ensure data security?</h3>
+                    <p class="text-gray-400">We employ bank-level encryption, multi-factor authentication, and regular security audits. Our systems are hosted on AWS with 99.9% uptime and automatic backups every 6 hours.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-bold mb-4">What is included in your tax optimization service?</h3>
+                    <p class="text-gray-400">Our comprehensive tax service includes year-round planning, quarterly reviews, deduction optimization, and compliance monitoring. We use AI-powered analysis to identify every legitimate tax-saving opportunity.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-bold mb-4">How quickly can I access my financial reports?</h3>
+                    <p class="text-gray-400">All reports are available in real-time through our secure client portal. Custom reports can be generated instantly, and our mobile app provides immediate access to key financial metrics.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-bold mb-4">What support options do you offer?</h3>
+                    <p class="text-gray-400">We provide 24/7 email support, priority phone support during business hours, and quarterly review meetings with your dedicated account manager. Emergency support is available on weekends.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-bold mb-4">How do you handle business growth and scaling?</h3>
+                    <p class="text-gray-400">Our services scale with your business. We offer flexible packages that adapt to your changing needs, and our systems can handle everything from startups to enterprises with complex requirements.</p>
                 </div>
             </div>
         </div>
@@ -121,11 +259,39 @@
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to optimize your finances?</h2>
             <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-                Join hundreds of successful businesses who trust us with their financial future.
+                Join hundreds of successful businesses who trust us with their financial future. Schedule your free consultation today.
             </p>
-            <a href="https://theaccountants.com" class="inline-block bg-white text-gray-900 text-lg px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <a href="#contact" class="inline-block bg-white text-gray-900 text-lg px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
                 Get Started Today
             </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+                Contact Us
+            </h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-300 mb-2" for="name">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-purple-500 transition-colors duration-300">
+                    </div>
+                    <div>
+                        <label class="block text-gray-300 mb-2" for="email">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-purple-500 transition-colors duration-300">
+                    </div>
+                    <div>
+                        <label class="block text-gray-300 mb-2" for="message">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-purple-500 transition-colors duration-300"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -142,12 +308,14 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
                     <p class="text-gray-400">support@example.com</p>
+                    <p class="text-gray-400">1-800-123-4567</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://test-acc-12349.github.io/albert-park-accounting-services-2025-04-24-dezjq/privacy.html" class="hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://test-acc-12349.github.io/albert-park-accounting-services-2025-04-24-dezjq/terms.html" class="hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://test-acc-12349.github.io/albert-park-accounting-services-2025-04-24-dezjq/blog.html" class="hover:text-purple-400 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
@@ -167,5 +335,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
